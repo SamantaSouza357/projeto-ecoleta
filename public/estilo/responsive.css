@@ -19,7 +19,11 @@
     #page-search-result .cards{
         grid-template-columns:  1fr;
     }
-
+    #page-search-result .cards .card img{
+       height: 300px;
+       background-size: cover;
+       border-radius: 8px;
+    }
     #page-create-point .field-group{
         flex-direction: column;
     }
