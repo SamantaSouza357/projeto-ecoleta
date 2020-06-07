@@ -44,12 +44,8 @@ fieldset {
     margin-top: 64px;
     border: 0;
 }
-
- form  fieldset legend {
+.coletaTitulo{
     margin-bottom: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
 }
 
@@ -96,7 +92,7 @@ label {
     margin-left: 24px;
 }
 
-button {
+.botaoFormulario{
     width: 240px;
     height: 56px;
     background-color: var(--primary-color);
@@ -152,11 +148,3 @@ li img, li span {
     pointer-events: none;
 }
 
-@media(max-width:900px) {
-    .header-top a {
-        position: absolute;
-        left: 75%;
-        transform: translateX(-50%);
-        bottom: 490px;
-    }
-}
