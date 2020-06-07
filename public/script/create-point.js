@@ -27,7 +27,7 @@ function getCity(event) {
 
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`
 
-    citySelect.innerHTML = `<option value="">Selecione a Cidade</option>`
+    citySelect.innerHTML = `<option value>Selecione a Cidade</option>`
     citySelect.disabled = true;
 
 
@@ -35,12 +35,14 @@ function getCity(event) {
         .then(res => res.json())
         .then(citys => {
             for (const city of citys) {
-                citySelect.innerHTML += ` <option value="${city.id}">${city.nome}</option>`
+                citySelect.innerHTML += `<option value="${city.nome}">${city.nome}</option>`
             }
             citySelect.disabled = false;
 
         })
-}
+
+    }
+   
 
 
 document
@@ -66,6 +68,8 @@ function handleSelectedItem(event) {
 
   const itemId = itemLi.dataset.id
 
+//   console.log("ITEM ID:",itemId)
+
 
   const alreadySelelected = selectedItems.findIndex(item=> {
       const itemFound = item == itemId
@@ -83,6 +87,6 @@ function handleSelectedItem(event) {
     selectedItems.push(itemId)
   }
 
-  colectItem.value = selectedItems
   console.log(selectedItems);
+  colectItem.value = selectedItems
 }

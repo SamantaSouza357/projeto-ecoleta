@@ -4,14 +4,14 @@
     margin: 0 auto;
 }
 
-#page-search-result .header-top{
+#page-search-result header{
     margin-top: 48px;
     display: flex;
     justify-content:space-between;
     align-items: center;
 }
 
-#page-search-result .header-top a{
+#page-search-result header a{
    color:var(--title-color);
    font-weight: bold;
    display: flex;
@@ -19,7 +19,7 @@
 }
 
 
-#page-search-result .header-top a span{
+#page-search-result header a span{
   background-image: url("../assed/arrow-left.svg");
   margin-right: 16px;
   display: flex;

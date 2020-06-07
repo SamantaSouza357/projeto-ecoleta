@@ -4,21 +4,22 @@
     margin: 0 auto;
 }
 
-#page-create-point .header-top {
-    margin-top: 48px;
+#page-create-point header {
+    margin-top: 60px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#page-create-point .header-top a {
+#page-create-point header a {
     color: var(--title-color);
     font-weight: bold;
     display: flex;
     align-items: center;
 }
 
-#page-create-point .header-top a span {
+#page-create-point header a span {
     background-image: url("../assed/arrow-left.svg");
     margin-right: 16px;
     display: flex;
@@ -44,12 +45,21 @@ fieldset {
     border: 0;
 }
 
-legend {
+ form  fieldset legend {
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 h2 {
     font-size: 24px;
+}
+
+form legend span{
+    font-size:14px;
+    color:var(--title-color);
 }
 
 .field {

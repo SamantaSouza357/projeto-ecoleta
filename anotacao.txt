@@ -1,0 +1,5 @@
+npm init -y = para instala o package.json
+
+configura o arquivo e depois dar node nome do arquivo
+
+npm install nodemon = atualiza sozinho a cada alteração
